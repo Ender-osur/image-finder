@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 
 import Layout from "../components/layout/Layout";
-import Home from "../screens/Home/Home";
-import SavedImages from "../screens/SavedImages/SavedImages";
+import Home from "../screens/home/Home";
+import SavedImages from "../screens/savedImages/SavedImages";
 
 export default function AppRoutes() {
   return (

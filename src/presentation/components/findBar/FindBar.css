@@ -1,0 +1,59 @@
+.find-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.find-bar__container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.find-bar__input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.find-bar__input:focus {
+  border-color: var(--primary-color-dark);
+}
+
+.find-bar__input::placeholder {
+  color: #999;
+}
+
+.find-bar__button {
+  padding: 12px 24px;
+  background-color: var(--primary-color-dark);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.find-bar__button:hover {
+  background-color: var(--primary-color);
+}
+
+.find-bar__button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+  .find-bar__container {
+    flex-direction: column;
+  }
+  
+  .find-bar__button {
+    width: 100%;
+  }
+}
