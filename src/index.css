@@ -11,58 +11,54 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Base */
+  --primary-color: #57d8be;
+  --primary-color-dark: #23b499;
+  --secondary-color: #17688e;
+  --secondary-color-dark: #0e4057;
+
+  /* Backgrounds */
+  --bg-main: #242424;
+  --bg-light: #2e2e2e;
+  --bg-lighter: #3a3a3a;
+  --bg-accent: #1e2f2f;
+  --bg-secondary: #1b2c3b;
+
+  /* Text */
+  --text-light: #ffffff;
+  --text-muted: #cccccc;
+  --text-disabled: #888888;
+  --text-accent: #57d8be;
+
+  /* Borders */
+  --border-color: #3f3f3f;
+  --border-light: #5a5a5a;
+  --border-accent: #57d8be;
+
+  /* Hover / Active */
+  --hover-primary: #6ae3cb;
+  --hover-secondary: #1d7aa9;
+  --hover-bg: #303030;
+
+  /* Buttons */
+  --button-primary-bg: var(--primary-color);
+  --button-primary-hover: var(--hover-primary);
+  --button-secondary-bg: var(--secondary-color);
+  --button-secondary-hover: var(--hover-secondary);
+
+  /* Cards / Surfaces */
+  --surface-bg: #2c2c2c;
+  --surface-elevated: #333333;
+
+  /* Shadows (puedes usar en box-shadow) */
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.2);
+  --shadow-strong: rgba(0, 0, 0, 0.4);
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  padding: 0;
+  box-sizing: border-box;
 }
