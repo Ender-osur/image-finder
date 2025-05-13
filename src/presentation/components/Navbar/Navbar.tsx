@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import useAuthState from "../../state/useAuthState";
 import "./Navbar.css";
 
@@ -8,14 +9,14 @@ export default function Navbar() {
     <nav className="nav">
       <ul>
         <li>
-          <a href="/">
+          <Link to="/">
             <span>Home</span>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="/saved">
+          <Link to="/saved">
             <span>Saved Images</span>
-          </a>
+          </Link>
         </li>
         <li>
           <button onClick={() => setIsAuthenticated(!isAuthenticated)}>

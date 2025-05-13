@@ -1,8 +1,8 @@
 .nav {
-  width: 100dvw;
   display: flex;
   justify-content: center;
   min-height: 50px;
+  width: 100%;
 }
 
 .nav ul {

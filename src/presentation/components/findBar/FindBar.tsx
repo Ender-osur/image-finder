@@ -1,4 +1,4 @@
-import useFinder from "../../hooks/components/useFinder";
+import useFinder from "./useFinder";
 import "./FindBar.css";
 
 interface FindBarProps {

@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import Layout from "../components/layout/Layout";
+import Layout from "../layout/Layout";
 import Home from "../screens/home/Home";
 import SavedImages from "../screens/savedImages/SavedImages";
 
